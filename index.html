@@ -9,5 +9,34 @@
 </head>
 <body>
     <h1>Pig Game!</h1>
+
+    <form>
+        <label for="nameInput"> Ditt namn:</label>
+        <input type="text">
+        <button id="nameButton">Bekräfta</button>
+    </form>
+    <h3>Spelarens namn: </h3>
+    <p class="playerName"></p>
+    <button class="viewInstructions">Visa instruktioner</button>
+    <section class="hidden">
+        <h2>Instruktioner: </h2>
+        <ul>
+            <li>Lägg in när spelet är klart</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Totala poäng: </h3>
+        <p id="totalPoints"></p>
+        <h3>Omgångens poäng: </h3>
+        <p id="roundPoints"></p>
+    </section>
+    <div id="gameSection">
+        <section>
+            <h3>Ditt slag: </h3>
+            <p id="diceResult"></p>
+            <button>Kasta tärningen</button>
+            <button>Samla in poängen</button>
+        </section>
+    </div>
 </body>
 </html>
