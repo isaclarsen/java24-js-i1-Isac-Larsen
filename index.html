@@ -9,34 +9,41 @@
 </head>
 <body>
     <h1>Pig Game!</h1>
-
     <form>
         <label for="nameInput"> Ditt namn:</label>
-        <input type="text">
+        <input type="text" placeholder="Ditt namn...">
         <button id="nameButton" type="button">Bekräfta</button>
     </form>
-    <h3>Spelarens namn: </h3>
+    <h3>Spelarens namn:</h3>
     <p id="playerName"></p>
-    <button class="viewInstructions">Visa instruktioner</button>
-    <section class="hidden">
+    <h4">Omgångar:</h4>
+    <p id="rounds"></p>
+    <button id="viewInstructions">Visa instruktioner</button>
+    <section id="instructions" class="hidden">
         <h2>Instruktioner: </h2>
         <ul>
-            <li>Lägg in när spelet är klart</li>
-        </ul>
+            <li>Ange ditt namn i fältet ovan och klicka på "Bekräfta".</li>
+            <li>Klicka på "Kasta tärningen" för att börja spela.</li>
+            <li>Varje kast ger ett nummer mellan 1 och 6. Detta läggs till rundans poäng.</li>
+            <li>Om du slår en etta förlorar du rundans poäng och omgången tar slut direkt.</li>
+            <li>Om du vill spara dina poäng, klicka på "Samla in poängen". Då läggs rundans poäng till din totala poäng.</li>
+            <li>Spelet fortsätter tills din totala poäng är minst 100.</li>
+            <li>När du når 100 poäng eller mer, vinner du spelet och får veta hur många omgångar det tog!</li>
+          </ul>
     </section>
-    <section>
+    <section class="gameSection">
         <h3>Totala poäng: </h3>
-        <p id="totalPoints"></p>
+        <p id="totalPoints">0</p>
         <h3>Omgångens poäng: </h3>
-        <p id="roundPoints"></p>
+        <p id="roundPoints">-</p>
+        <h3>Ditt slag: </h3>
+        <p id="diceResult">-</p>
+        <button id="throwDice">Kasta tärningen</button>
+        <button id="lockPoints">Samla in poängen</button>
     </section>
-    <div id="gameSection">
-        <section>
-            <h3>Ditt slag: </h3>
-            <p id="diceResult"></p>
-            <button>Kasta tärningen</button>
-            <button>Samla in poängen</button>
-        </section>
+    <button id="restart" class="hidden">Starta om</button>
+    <div>
+        <p id="info"></p>
     </div>
 </body>
 </html>

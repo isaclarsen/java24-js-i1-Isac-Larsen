@@ -1,9 +1,96 @@
-.hidden{
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf6e3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: #d35400;
+}
+
+form {
+    margin: 1.5rem 0;
+}
+
+input[type="text"] {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-right: 0.5rem;
+}
+
+button {
+    padding: 0.6rem 1.2rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #27ae60;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+#viewInstructions {
+    background-color: #2980b9;
+}
+
+#viewInstructions:hover {
+    background-color: #3498db;
+}
+
+.hidden {
     display: none;
 }
 
-body {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(124, 190, 201);
+.gameSection {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    width: 90%;
+    max-width: 500px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#instructions{
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 790px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+li{
+    list-style-type: none;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+#info {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #888;
 }
